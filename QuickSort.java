@@ -98,7 +98,10 @@ public class QuickSort
   public static void qhelper( int[] arr, int left, int right){
 
     if(left<right){
-    int pvtPos= partition(arr,left,right,(left+right+1)/2);
+    int pvtPos= partition(arr,left,right,(left+right+1)/2); //chooses middle value as pvtPos
+    //int pvtPos = partition(arr,left,right,left); //chooses leftmost value as pvtPos
+    //int pvtPos = partition(arr,left,right,right) //chooses rightmost value as pvtPos
+    //int pvtPos = partition(arr,left,right,(int)(Math.random()*(right+1))) //chooses a random pvtPos
 
     qhelper(arr,left,pvtPos-1);
     qhelper(arr,pvtPos+1,right);}
