@@ -7,8 +7,8 @@ public class QuickSortTester {
 
 	startTime = System.nanoTime();
 
-	QuickSort.qsort( arr, arr.length/2 ); //chooses middle value as pvtPos
-  //QuickSort.qsort( arr, 0 ); //chooses leftmost value as pvtPos
+	//QuickSort.qsort( arr, arr.length/2 ); //chooses middle value as pvtPos
+  QuickSort.qsort( arr, 0 ); //chooses leftmost value as pvtPos
   //QuickSort.qsort( arr, arr.length-1 ); //chooses rightmost value as pvtPos
   //QuickSort.qsort( arr, (int)(Math.random()*arr.length) ); //choose random value as pvtPos
 
@@ -25,14 +25,14 @@ public class QuickSortTester {
     public static void main(String[] args) {
 	// test case
 
-  //Middle Pivot Point, Random Array
+  //Random Array
 	 System.out.println("Array Length, Average Time");
-	// for (int i = 1000 ; i <= 10000 ; i += 50) {
-	//     int[] example = QuickSort.buildArray(i,100);
-	//     getTime(example);
-	// }
+	for (int i = 1000 ; i <= 10000 ; i += 50) {
+	    int[] example = QuickSort.buildArray(i,100);
+	    getTime(example);
+	}
 
-  //Middle Pivot Point, Sorted Ascending Array
+  //Sorted Ascending Array
   // for (int i = 1000 ; i <= 10000 ; i += 50){
   //   int[] example = new int [i];
   //   for (int j =0; j<i; j++){
@@ -40,17 +40,17 @@ public class QuickSortTester {
   //   }
   //   getTime(example);
 
-  //Middle Pivot Point, Sorted Descending Array
-  for (int i = 1000 ; i <= 10000 ; i += 50){
-    int[] example = new int [i];
-    int number = 0;
-    for (int j =i; j>0; j--){
-      example[number]=j;
-      number ++;
-    }
-    getTime(example);
+  //Sorted Descending Array
+  // for (int i = 1000 ; i <= 10000 ; i += 50){
+  //   int[] example = new int [i];
+  //   int number = 0;
+  //   for (int j =i; j>0; j--){
+  //     example[number]=j;
+  //     number ++;
+  //   }
+  //   getTime(example);
 
-  }
+
 
 }
 }
