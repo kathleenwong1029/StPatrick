@@ -8,9 +8,9 @@ public class QuickSortTester {
 	startTime = System.nanoTime();
 
 	//QuickSort.qsort( arr, arr.length/2 ); //chooses middle value as pvtPos
-  QuickSort.qsort( arr, 0 ); //chooses leftmost value as pvtPos
+  //QuickSort.qsort( arr, 0 ); //chooses leftmost value as pvtPos
   //QuickSort.qsort( arr, arr.length-1 ); //chooses rightmost value as pvtPos
-  //QuickSort.qsort( arr, (int)(Math.random()*arr.length) ); //choose random value as pvtPos
+  QuickSort.qsort( arr, (int)(Math.random()*arr.length) ); //choose random value as pvtPos
 
 
 	totalTime = System.nanoTime() - startTime;
