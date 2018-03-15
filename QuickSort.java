@@ -84,9 +84,9 @@ public class QuickSort
    * sorts array
    * @param d -- array of ints to be sorted in place
    *****************************************************/
-  public static void qsort( int[] d )
+  public static void qsort( int[] d, int pvt )
   {
-    qhelper(d,0,d.length-1);
+    qhelper(d,0,d.length-1,pvt);
   }
 
   /*****************************************************
@@ -95,13 +95,10 @@ public class QuickSort
    * @param left -- starting index of array
    * @param right -- last index of array
    *****************************************************/
-  public static void qhelper( int[] arr, int left, int right){
+  public static void qhelper( int[] arr, int left, int right, int pvt){
 
     if(left<right){
-    int pvtPos= partition(arr,left,right,(left+right+1)/2); //chooses middle value as pvtPos
-    //int pvtPos = partition(arr,left,right,left); //chooses leftmost value as pvtPos
-    //int pvtPos = partition(arr,left,right,right) //chooses rightmost value as pvtPos
-    //int pvtPos = partition(arr,left,right,(int)(Math.random()*(right+1))) //chooses a random pvtPos
+    int pvtPos= partition(arr,left,right,pvtPos); 
 
     qhelper(arr,left,pvtPos-1);
     qhelper(arr,pvtPos+1,right);}

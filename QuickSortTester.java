@@ -7,7 +7,10 @@ public class QuickSortTester {
 
 	startTime = System.nanoTime();
 
-	QuickSort.qsort( arr );
+	QuickSort.qsort( arr, arr.length/2 ); //chooses middle value as pvtPos
+  //QuickSort.qsort( arr, 0 ); //chooses leftmost value as pvtPos
+  //QuickSort.qsort( arr, arr.length-1 ); //chooses rightmost value as pvtPos
+  //QuickSort.qsort( arr, (int)(Math.random()*arr.length) ); //choose random value as pvtPos
 
 
 	totalTime = System.nanoTime() - startTime;
@@ -40,7 +43,7 @@ public class QuickSortTester {
   //Middle Pivot Point, Sorted Descending Array
   for (int i = 1000 ; i <= 10000 ; i += 50){
     int[] example = new int [i];
-    int number = 0; 
+    int number = 0;
     for (int j =i; j>0; j--){
       example[number]=j;
       number ++;
