@@ -29,12 +29,12 @@ The worst case scenario of the following QuickSort algorithm is .
 ## Results ##
 ![](./graph.png)
 
-The data shows that the runtime is roughly linear, with few distinct points that do not conform to the trend.
+The data shows that the runtime is roughly .
 
-We were able to formulate a line of best fit, **12.6X - 10707 = Y with a coefficient of determination (R^2) of 0.984**.  
+We were able to formulate a line of best fit, ****.  
 
 ## Conclusions ##
-The function runs in linear time with negligble deviations.
+The function runs in time with negligble deviations.
 
 
 The data indicates that . 
