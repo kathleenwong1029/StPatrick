@@ -6,7 +6,10 @@ L#01 -- What Does the Data Say?
 Kathleen Wong, Susan Lin, Puneet Johal
 
 ## Hypothesis ##
-As the size of the array, n, increases, the runtime will also increase at a **linear rate**.
+The best case and average case for QuickSort is when the midpoint of the array
+is used as the pivot point, which will run in O(nlogn). The worst case for QuickSort
+is when the either end of the array is used as the pivot point, resulting in
+O(n^2).
 
 ## Background ##
 QuickSort.java should have a runtime of **O(n)**.
@@ -42,4 +45,4 @@ The data indicates that there are less fluctuations the more times you have alre
 ## Conclusions ##
 The sort algorithm runs in linear time.
 
-The minor deviations were mostly likely caused by the randomness of the target number which could have led to either a worst or best case scenario. 
+The minor deviations were mostly likely caused by the randomness of the target number which could have led to either a worst or best case scenario.
