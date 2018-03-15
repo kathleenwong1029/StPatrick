@@ -1,12 +1,5 @@
 public class QuickSortTester {
 
-//populate from 0 to 100
-    public static void populate(int[] arr) {
-	for (int i = 0; i < arr.length ; i++) {
-    arr[i] = (int)( 100 * Math.random() );
-	    }
-    }
-
     public static void getTime(int[] arr) {
 	long startTime = 0;
 	long totalTime = 0;
@@ -29,12 +22,32 @@ public class QuickSortTester {
     public static void main(String[] args) {
 	// test case
 
-	System.out.println("Array Length, Average Time");
-	for (int i = 1000 ; i <= 10000 ; i += 50) {
-	    int[] example = new int[i];
-	    populate(example);
-	    getTime(example);
-	}
-    }
+  //Middle Pivot Point, Random Array
+	 System.out.println("Array Length, Average Time");
+	// for (int i = 1000 ; i <= 10000 ; i += 50) {
+	//     int[] example = QuickSort.buildArray(i,100);
+	//     getTime(example);
+	// }
 
+  //Middle Pivot Point, Sorted Ascending Array
+  // for (int i = 1000 ; i <= 10000 ; i += 50){
+  //   int[] example = new int [i];
+  //   for (int j =0; j<i; j++){
+  //     example[j]=j;
+  //   }
+  //   getTime(example);
+
+  //Middle Pivot Point, Sorted Descending Array
+  for (int i = 1000 ; i <= 10000 ; i += 50){
+    int[] example = new int [i];
+    int number = 0; 
+    for (int j =i; j>0; j--){
+      example[number]=j;
+      number ++;
+    }
+    getTime(example);
+
+  }
+
+}
 }
