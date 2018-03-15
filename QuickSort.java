@@ -98,13 +98,14 @@ public class QuickSort
   public static void qhelper( int[] arr, int left, int right, int pvt){
 
     if(left<right){
-    int pvtPos= partition(arr,left,right,pvtPos); 
+    int pvtPos= partition(arr,left,right,pvtPos);
 
     qhelper(arr,left,pvtPos-1);
     qhelper(arr,pvtPos+1,right);}
 
   }
 
+/*
   //main method for testing
   public static void main( String[] args )
   {
@@ -137,7 +138,7 @@ public class QuickSort
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-
+/*
     //get-it-up-and-running, static test case w/ dupes:
     int [] arr2 = {7,1,5,12,3,7};
     System.out.println("\narr2 init'd to: " );
@@ -166,6 +167,8 @@ public class QuickSort
     /*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/*
   }//end main
+*/
 
 }//end class QuickSort
