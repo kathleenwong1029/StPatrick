@@ -12,11 +12,8 @@ is when the either end of the array is used as the pivot point, resulting in
 O(n^2).
 
 ## Background ##
-QuickSort.java should have a runtime of **O(n)**.
-
-type in javac QuickSortTester.java
-
-then type in java QuickSortDriver > data.csv
+QuickSort is a sort that first partitions the arrary around a pivot point
+and then recursively partitions each side of the pivot point.
 
 ## Best Case ##
 The best case scenario of the following QuickSort algorithm is if the pivot point that is chosen happens to be the middle value in the sorted array.
@@ -30,11 +27,33 @@ The worst case scenario of the following QuickSort algorithm is if the pivot poi
 ## Methodology ##
 
 ## Results ##
-![](./graph.png)
+* Sorting a random array using the midpoint as the pivot point
+![](./middleRandom.png)
+* Sorting a sorted ascending array using the midpoint as the pivot point
+![](./middleSorted.png)
+* Sorting a sorted descending array using the midpoint as the pivot point
+![](./middleDescending.png)
+* Sorting a random array using the first element as the pivot point
+![](./leftRandom.png)
+* Sorting a sorted ascending array using the first element as the pivot point
+![](./leftSorted.png)
+* Sorting a sorted descending array using the first element as the pivot point
+![](./leftDescending.png)
+* Sorting a random array using the last element as the pivot point
+![](./rightRandom.png)
+* Sorting a sorted ascending array using the last element as the pivot point
+![](./rightSorted.png)
+* Sorting a sorted descending array using the last element as the pivot point
+![](./rightDescending.png)
+* Sorting a random array using a random element as the pivot point
+![](./randomRandom.png)
+* Sorting a sorted ascending array using a random element as the pivot point
+![](./randomSorted.png)
+* Sorting a sorted descending array using a random element as the pivot point
+![](./randomDescending.png)
 
-The data shows that the runtime is roughly liner.
 
-We were able to formulate a *line* of best fit, further showing that our results were linear.  
+
 
 ## Conclusions ##
 The function runs in linear time with negligible deviations.
