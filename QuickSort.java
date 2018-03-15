@@ -100,8 +100,8 @@ public class QuickSort
     if(left<right){
     int pvtPos= partition(arr,left,right,pvt);
 
-    qhelper(arr,left,pvtPos-1);
-    qhelper(arr,pvtPos+1,right);}
+    qhelper(arr,left,pvtPos-1,pvt);
+    qhelper(arr,pvtPos+1,right,pvt);}
 
   }
 
