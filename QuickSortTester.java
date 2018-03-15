@@ -26,11 +26,11 @@ public class QuickSortTester {
 	// test case
 
   //Random Array
-	 System.out.println("Array Length, Average Time");
-	for (int i = 1000 ; i <= 10000 ; i += 50) {
-	    int[] example = QuickSort.buildArray(i,100);
-	    getTime(example);
-	}
+	//  System.out.println("Array Length, Average Time");
+	// for (int i = 1000 ; i <= 10000 ; i += 50) {
+	//     int[] example = QuickSort.buildArray(i,100);
+	//     getTime(example);
+	// }
 
   //Sorted Ascending Array
   // for (int i = 1000 ; i <= 10000 ; i += 50){
@@ -38,17 +38,17 @@ public class QuickSortTester {
   //   for (int j =0; j<i; j++){
   //     example[j]=j;
   //   }
-  //   getTime(example);
+  //   getTime(example);}
 
   //Sorted Descending Array
-  // for (int i = 1000 ; i <= 10000 ; i += 50){
-  //   int[] example = new int [i];
-  //   int number = 0;
-  //   for (int j =i; j>0; j--){
-  //     example[number]=j;
-  //     number ++;
-  //   }
-  //   getTime(example);
+  for (int i = 1000 ; i <= 10000 ; i += 50){
+    int[] example = new int [i];
+    int number = 0;
+    for (int j =i; j>0; j--){
+      example[number]=j;
+      number ++;
+    }
+      getTime(example);}
 
 
 
