@@ -1,4 +1,8 @@
+/*We tested arrays that were already sorted in ascending or descending order, or a random array
+by using the midpoint, the first element, the last element, and a random element as the pivot
+point.*/
 public class QuickSortTester {
+
 
     public static void getTime(int[] arr) {
 	long startTime = 0;

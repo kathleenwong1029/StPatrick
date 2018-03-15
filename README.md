@@ -25,7 +25,10 @@ The most likely/average case scenario of the following QuickSort algorithm is th
 The worst case scenario of the following QuickSort algorithm is if the pivot point that is chosen happens to be one of the extreme values of the sorted array.
 
 ## Methodology ##
-We first tested with various pivot points of rightmost, leftmost, and random positioning. With each of these, we varied the array size to show trend over a mass amount of data. 
+We tested arrays that were already sorted in ascending or descending order, or a random array
+by using the midpoint, the first element, the last element, and a random element as the pivot
+point.
+
 ## Results ##
 * Sorting a random array using the midpoint as the pivot point
 ![](./middleRandom.png)
@@ -53,19 +56,8 @@ We first tested with various pivot points of rightmost, leftmost, and random pos
 ![](./randomDescending.png)
 
 
-
-<<<<<<< HEAD
-=======
-We were able to formulate a *line* of best fit, further showing that our results were linear.
->>>>>>> 4637fd43821dd7bfc3f325b12c3e1684e292ac2b
-
 ## Conclusions ##
 The function runs in linear time with negligible deviations.
 
 
 The data indicates that there are less fluctuations the more times you have already ran the code.
-
-## Conclusions ##
-The sort algorithm runs in linear time.
-
-The minor deviations were mostly likely caused by the randomness of the target number which could have led to either a worst or best case scenario.
