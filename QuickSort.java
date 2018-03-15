@@ -98,7 +98,7 @@ public class QuickSort
   public static void qhelper( int[] arr, int left, int right, int pvt){
 
     if(left<right){
-    int pvtPos= partition(arr,left,right,pvtPos);
+    int pvtPos= partition(arr,left,right,pvt);
 
     qhelper(arr,left,pvtPos-1);
     qhelper(arr,pvtPos+1,right);}
